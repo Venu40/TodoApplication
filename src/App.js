@@ -14,7 +14,7 @@ import { EditOutlined, DeleteOutlined, UserOutlined } from "@ant-design/icons";
 import ButtonGroup from "antd/es/button/button-group";
 function App() {
   useEffect(() => {
-    fetch("http://localhost:5000/tasks")
+    fetch("https://my-json-server.typicode.com/venu40/FakeTodoAPI/todo")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -223,7 +223,7 @@ function App() {
   }
   function onSubmit(e) {
     console.log(e);
-    fetch("http://localhost:5000/tasks", {
+    fetch("https://my-json-server.typicode.com/venu40/FakeTodoAPI/todo", {
       method: "POST",
       headers: {
         Accept: "application/json",
